@@ -1,5 +1,6 @@
 //@prepros-prepend jquery-2.1.1.min.js
 //@prepros-prepend bootstrap.min.js
+//@prepros-prepend lazy.min.js
 
 $(document).ready(function() {
     /* Работа формы */
@@ -42,6 +43,9 @@ $(document).ready(function() {
             check.next().children().css("color", "rgba(0,0,0, 1)");
             message.slideUp(500);
         });
+    });
+    $(function () {
+        $('.lazy').lazy();
     });
         /* Видео */
         $(function () {

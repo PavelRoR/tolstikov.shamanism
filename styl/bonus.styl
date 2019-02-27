@@ -1,0 +1,105 @@
+@font-face {
+	font-family: 'AvenirNextCyr';
+	src: url('../fonts/AvenirNextCyr.eot');
+	src: url('../fonts/AvenirNextCyr.eot') format('embedded-opentype'),
+		 url('../fonts/AvenirNextCyr.woff2') format('woff2'),
+		 url('../fonts/AvenirNextCyr.woff') format('woff'),
+		 url('../fonts/AvenirNextCyr.ttf') format('truetype'),
+		 url('../fonts/AvenirNextCyr.svg#AvenirNextCyr') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'AvenirNextCyrBold';
+	src: url('../fonts/AvenirNextCyrBold.eot');
+	src: url('../fonts/AvenirNextCyrBold.eot') format('embedded-opentype'),
+		 url('../fonts/AvenirNextCyrBold.woff2') format('woff2'),
+		 url('../fonts/AvenirNextCyrBold.woff') format('woff'),
+		 url('../fonts/AvenirNextCyrBold.ttf') format('truetype'),
+		 url('../fonts/AvenirNextCyrBold.svg#AvenirNextCyrBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'AvenirNextCyrItalic';
+	src: url('../fonts/AvenirNextCyrItalic.eot');
+	src: url('../fonts/AvenirNextCyrItalic.eot') format('embedded-opentype'),
+		 url('../fonts/AvenirNextCyrItalic.woff2') format('woff2'),
+		 url('../fonts/AvenirNextCyrItalic.woff') format('woff'),
+		 url('../fonts/AvenirNextCyrItalic.ttf') format('truetype'),
+		 url('../fonts/AvenirNextCyrItalic.svg#AvenirNextCyrItalic') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: italic;
+}
+
+@import '../css/_css/bootstrap.min.css'
+
+*
+	margin 0
+	padding 0
+	outline none
+body
+	font-family: 'AvenirNextCyr', sans-serif
+	font-size: 18px
+	line-height: 1.3
+	color: rgb(0, 0, 0);
+	background-color: #122138
+a
+	color: #fefefe
+	&:focus
+		outline: 0
+	&:hover
+		text-decoration none
+h1,h2,h3,h4,h5,h6
+	font-weight normal
+	margin 0
+button
+	border none
+.video_wrapper
+	margin 0 auto
+	position relative
+	width 100%
+	&:before
+		content ''
+		height 0
+		padding-top 56.25%
+		display block
+	&:after
+		content: ''
+		display block
+		position: absolute
+		top: 0
+		left 0
+		right 0
+		width: 100%
+		height 70px
+	img,
+	iframe
+		position absolute
+		width 100%
+		height 100%
+		display block
+		background-color #000
+		border-radius 3px
+		border: 0
+		top 0
+		left 0
+		right 0
+		bottom 0
+		cursor pointer
+.general_title
+	font-size: 30px;
+	font-family: "AvenirNextCyrBold", sans-serif;
+	color: rgb(0, 0, 0);
+	text-align: center
+	line-height: 1
+	margin-bottom: 30px
+
+@import 'bonus/main'
+@import 'bonus/feedback'
+@import 'bonus/footer'
+@import 'bonus/medias'

@@ -18,7 +18,7 @@ section#prices
 	.container
 		h3.general_title.general_title_prices Варианты участия в онлайн практикуме:
 		.row
-			.col-md-4.col-sm-4
+			.col-md-4.col-sm-6
 				.packet
 					.packet_head
 						h4.packet_head_title Практикум 
@@ -35,7 +35,7 @@ section#prices
 						p.cost.cost_today Стоимость сегодня:
 							span#today_1= today_1
 						a.button.button_cost(target="_blank" href= link_1)#link_1 Выбрать
-			.col-md-4.col-sm-4
+			.col-md-4.col-sm-6
 				.packet
 					.packet_head
 						h4.packet_head_title 
@@ -56,7 +56,7 @@ section#prices
 						p.cost.cost_today Стоимость сегодня:
 							span#today_2= today_2
 						a.button.button_cost(target="_blank" href= link_2)#link_2 Выбрать
-			.col-md-4.col-sm-4
+			.col-md-4.col-sm-6.col-md-offset-0.col-sm-offset-3
 				.packet
 					.packet_head
 						h4.packet_head_title ВИП 
@@ -77,15 +77,15 @@ section#prices
 						p.cost.cost_today Стоимость сегодня:
 							span#today_3= today_3
 						a.button.button_cost(target="_blank" href= link_3)#link_3 Выбрать
-			.prepayment
-				h4.prepaymant_title Акция!!!
-				p.prepayment_text Платите 1 000 рублей, бонусом получаете 
-					span#prepayment_bonus= prep_bonus
-					br
-					| На счет зачисляется 
-					span#prepayment_credited=prep_cred 
-				a.button.prepayment_button(href= prep_link target="_blank" id="prepayment_link") Оплатить 1 000р.
-			.timer
-				h4.timer_title Скидка сгорит через:
-				.clock
-				.clock-stop
+		.prepayment
+			h4.prepaymant_title Акция!!!
+			p.prepayment_text Платите 1 000 рублей, бонусом получаете 
+				span#prepayment_bonus= prep_bonus
+				br
+				| На счет зачисляется 
+				span#prepayment_credited=prep_cred 
+			a.button.prepayment_button(href= prep_link target="_blank" id="prepayment_link") Оплатить 1 000р.
+		.timer
+			h4.timer_title Скидка сгорит через:
+			.clock
+			.clock-stop

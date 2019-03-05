@@ -4,23 +4,19 @@
 	text-align: center
 	background-color: #122138
 	h5
-		font-size: 22px;
+		font-size: 20px;
 		color: rgb(255, 252, 252);
 		line-height: 1.042;
 		margin 0
-		font-family: "AvenirNextCyrBold", sans-serif;
+		font-family: 'AvenirNextCyrBold', sans-serif
 	p
 	#conditions
 		font-size: 14px;
 		color: rgba(254, 254, 254, .6);
 		line-height: 1.786;
-		width 100%
-		max-width 700px
-		margin 0 auto
 	#conditions
+		margin 15px 0 0
 		text-decoration: underline
-		&:hover
-			text-decoration: none
 .soc_buttons
 	width 100%
 	margin: 0 auto
@@ -29,23 +25,27 @@
 		margin: 20px 7px
 		position relative
 		z-index: 1
-		border-radius: 50px
-		background-color: #001381
-		transition: all .3s ease
-		text-align: center
-		border: 1px solid #fff
-		i
+		&:before
+			content: ''
+			display block
+			position: absolute
+			top: 0
+			left 0
+			right 0
+			margin 0 auto
+			width: 32px;
+			height 32px
+			border-radius: 50px
+			background-color: #fff
+			z-index 4
+		.fa
 			width: 32px;
 			height: 32px;
-			color #fff
+			color #122138
 			font-size 18px
 			line-height 32px
-			border-radius: 50px
 			position relative
 			z-index 9
-			transition: all .3s ease
-		&:hover
-			opacity .8
 .modal-backdrop.in
 	opacity .9
 .modal-content

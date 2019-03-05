@@ -1,5 +1,7 @@
 //@prepros-prepend jquery-2.1.1.min.js
 //@prepros-prepend lazy.min.js
+//@prepros-prepend flipclock.min.js
+//@prepros-prepend timer.js
 
 $(document).ready(function () {
     /* Якорь */

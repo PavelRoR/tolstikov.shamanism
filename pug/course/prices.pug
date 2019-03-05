@@ -1,0 +1,91 @@
+-var full_1 = '25 000р.';
+-var full_2 = '50 000р.';
+-var full_3 = '150 000р.';
+-var sale_1 = '15 000р.';
+-var sale_2 = '30 000р.';
+-var sale_3 = '50 000р.';
+-var today_1 = '9 990р.';
+-var today_2 = '19 990р.';
+-var today_3 = '99 900р.';
+-var link_1 = '';
+-var link_2 = '';
+-var link_3 = '';
+-var prep_bonus = '400р.'
+-var prep_cred = '1 400р.'
+-var prep_link = ''
+
+section#prices
+	.container
+		h3.general_title.general_title_prices Варианты участия в онлайн практикуме:
+		.row
+			.col-md-4.col-sm-4
+				.packet
+					.packet_head
+						h4.packet_head_title Практикум 
+							span "Основы Шаманизма"
+					.packet_body
+						p.packet_body_text Онлайн участие и записи
+						p.more_button(data-toggle="modal" data-target="#modalPlan") Подробнее
+						p.packet_body_text Закрытая площадка с ответами на вопросы
+					.packet_footer
+						p.cost.cost_full Стоимсоть:
+							span= full_1
+						p.cost.cost_sale Скидка:
+							span#sale_1= sale_1
+						p.cost.cost_today Стоимость сегодня:
+							span#today_1= today_1
+						a.button.button_cost(target="_blank" href= link_1)#link_1 Выбрать
+			.col-md-4.col-sm-4
+				.packet
+					.packet_head
+						h4.packet_head_title 
+							span Практикум&nbsp;
+							| + 
+							span Мастер группа
+					.packet_body
+						p.packet_body_text Онлайн участие и записи
+						p.more_button(data-toggle="modal" data-target="#modalPlan") Подробнее
+						p.packet_body_text Закрытая площадка с ответами на вопросы
+						p.packet_body_text Мастер Группа
+						p.more_button(data-toggle="modal" data-target="#modalMg") Подробнее
+					.packet_footer
+						p.cost.cost_full Стоимсоть:
+							span= full_2
+						p.cost.cost_sale Скидка:
+							span#sale_2= sale_2
+						p.cost.cost_today Стоимость сегодня:
+							span#today_2= today_2
+						a.button.button_cost(target="_blank" href= link_2)#link_2 Выбрать
+			.col-md-4.col-sm-4
+				.packet
+					.packet_head
+						h4.packet_head_title ВИП 
+							span - Индивидуальное обучение
+					.packet_body
+						p.packet_body_text Онлайн участие и записи
+						p.more_button(data-toggle="modal" data-target="#modalPlan") Подробнее
+						p.packet_body_text Закрытая площадка с ответами на вопросы
+						p.packet_body_text Мастер Группа
+						p.more_button(data-toggle="modal" data-target="#modalMg") Подробнее
+						p.packet_body_text Индивидуальный подход
+						p.more_button(data-toggle="modal" data-target="#modalPersonal") Подробнее
+					.packet_footer
+						p.cost.cost_full Стоимсоть:
+							span= full_3
+						p.cost.cost_sale Скидка:
+							span#sale_3= sale_3
+						p.cost.cost_today Стоимость сегодня:
+							span#today_3= today_3
+						a.button.button_cost(target="_blank" href= link_3)#link_3 Выбрать
+			.prepayment
+				h4.prepaymant_title Акция!!!
+				p.prepayment_text Платите 1 000 рублей, бонусом получаете 
+					span#prepayment_bonus= prep_bonus
+					br
+					| На счет зачисляется 
+					span#prepayment_credited=prep_cred 
+				a.button.prepayment_button(href= prep_link target="_blank" id="prepayment_link") Оплатить 1 000р.
+			.timer
+				h4.timer_title Скидка сгорит через:
+				.clock
+				.clock-stop

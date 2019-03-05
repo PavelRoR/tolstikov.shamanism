@@ -4,12 +4,16 @@ html(lang="ru")
 		meta(charset="UTF-8")
 		meta(name="viewport" content="width=device=width, initial-scale=1")
 		meta(http-equiv="X-UA-Compatible" content="ie=edge")
-		meta(property="og:title" content="«Основы Шаманизма и Волхвования»")
-		meta(property="og:description" content="Легендарный онлайн практикум от потомственного колдуна и практикующего нео шамана")
-		title «Основы Шаманизма и Волхвования». Легендарный онлайн практикум от потомственного колдуна и практикующего нео шамана
+		meta(property="og:title" content="«Шаманизм - путь к первоистокам»")
+		meta(property="og:description" content="Записи бесплатного 4-хдневного интенсива Виктора Толстикова")
+		meta(property="fb:app_id" content="2030481470529055")
+		title «Шаманизм - путь к первоистокам». Записи бесплатного 4-хдневного интенсива Виктора Толстикова
 		link(rel="icon" type="image/x-icon" href="../favicon.ico")
 		link(rel="shortcut icon" type="image/x-icon" href="../favicon.png")
 		link(rel="stylesheet" href="../css/course.css")
+		script(src="//vk.com/js/api/openapi.js?153")
+		script
+			| VK.init({apiId: 6314801,onlyWidgets: true});
 		script 
 			| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
 		noscript
@@ -24,7 +28,7 @@ html(lang="ru")
 		noscript
 			img(height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2406475009380573&ev=PageView&noscript=1")
 		<!-- End Facebook Pixel Code -->
-	body#course
+	body#records
 		<!-- Yandex.Metrika counter -->
 		script(type="text/javascript")
 			| (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter35450015 = new Ya.Metrika({ id:35450015, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");
@@ -32,15 +36,17 @@ html(lang="ru")
 			div
 				img(src="https://mc.yandex.ru/watch/35450015" style="position:absolute; left:-9999px;" alt="")
 		<!-- /Yandex.Metrika counter -->
-		include pug/course/main
+		div#fb-root
+		script
+			| (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s);js.id = id;js.src = 'https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.12&appId=2030481470529055&autoLogAppEvents=1';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+		include pug/recs/main
 		include pug/course/get
 		include pug/course/for
 		include pug/course/plan
 		include pug/course/prices
-		include pug/course/author
-		include pug/course/revs
+		include pug/recs/videos
 		include pug/course/footer
-		include pug/course/scripts
+		include pug/recs/scripts
 		<!-- Begin LeadBack code -->
 		//script
 			|	var _emv = _emv || [];_emv['campaign'] = '867c51ec0949a1cc34f60545'; (function() { var em = document.createElement('script');em.type = 'text/javascript';em.async = true;em.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'leadback.ru/js/leadback.js';var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(em, s);})();

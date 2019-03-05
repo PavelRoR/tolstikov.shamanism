@@ -1,0 +1,45 @@
+section#videos
+	.container
+		h3.general_title.general_title_videos Записи интенсива
+		h3.general_title.videos_general_title.hide Записей интенсива больше нет в свободном доступе
+		.video_tabs
+			ul.video_tabs_buttons
+				li День 1
+				li День 2
+				li День 3
+				li День 4
+			.video_container
+				.video_tabs_day
+					h4.video_tabs_day_title День 1
+					.video_wrapper.day_video_wrapper
+						//- iframe(src="https://player.vimeo.com/video/300352035" allowFullScreen mozallowfullscreen webkitAllowFullScreen)
+						iframe(src="https://youtube.com/embed/tAKUffQErXM?rel=0" allowfullscreen)
+					p.video_tabs_day_text Занятие состоится 25.03.19, в 19:00
+					p.video_tabs_day_text Запись занятия появится здесь 26.03.19, после 13:00
+				.video_tabs_day
+					h4.video_tabs_day_title День 2
+					p.video_tabs_day_text Занятие состоится 26.03.19, в 19:00
+					p.video_tabs_day_text Запись занятия появится здесь 27.03.19, после 13:00
+				.video_tabs_day
+					h4.video_tabs_day_title День 3
+					p.video_tabs_day_text Занятие состоится 27.03.19, в 19:00
+					p.video_tabs_day_text Запись занятия появится здесь 28.03.19, после 13:00
+				.video_tabs_day
+					h4.video_tabs_day_title День 4
+					p.video_tabs_day_text Занятие состоится 28.03.19, в 19:00
+					p.video_tabs_day_text Запись занятия появится здесь 29.03.19, после 13:00
+		h4.buy_recs Купить записи интенсива за 439р.
+		h4.buy_recs.hide Но вы можете приобрести их полные версии за 439 рублей и радоваться жизни вместе с теми, кто уже их посмотрел
+		a.button.buy_recs_button(href="https://shop.mastervision.su/?r=ordering/cart/as1&id=2858&clean=true&lg=ru " target="_blank") Купить
+		#feedback
+			h3.general_title.feedback_general_title Ваши ответы и вопросы к Виктору пишите 
+				span в формах ниже:
+			.row
+				.col-md-6.col-sm-6
+					#vk
+						#vk_comments
+						script(type="text/javascript")
+							| VK.Widgets.Comments("vk_comments", { limit: 15,  attach: 0, autoPublish: 1 });
+				.col-md-6.col-sm-6
+					#fb
+						.fb-comments(data-href="https://tolstikov.mastervision.su/shamanism/records/" data-width="100%" data-numposts="15" data-order-by="reverse_time")
